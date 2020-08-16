@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminPage">
+
+    <TextView
+        android:id="@+id/textView_adminPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textView_adminPage"
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_adminAddPart"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/btn_adminAddPart"
+        android:text="@string/textAdmin_add_part"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_adminViewPart"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/btn_adminViewPart"
+        android:text="@string/textAdmin_select_part"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_adminAddPart" />
+
+    <Button
+        android:id="@+id/btn_adminProfile"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="@color/btn_adminProfile"
+        android:text="@string/textAdmin__profile"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_adminViewPart" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,5 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">MADProject</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">
@@ -146,4 +147,83 @@
     <string name="select_gpu_hint">Select GPU</string>
     <string name="save_btn">Save</string>
     <string name="reset_btn">RESET</string>
+=======
+    <string name="app_name">ComputerSolutions</string>
+    <string name="textViewHome1">Computer Parts</string>
+    <string name="casing">Casing</string>
+    <string name="btn_addPart">ADD</string>
+    <string name="btn_choose1">Choose</string>
+    <string name="btn_choose2">Choose</string>
+    <string name="btn_choose3">Choose</string>
+    <string name="btn_choose4">Choose</string>
+    <string name="textView_partPhoto1">Photo</string>
+    <string name="textView_partPhoto2">Photo</string>
+    <string name="textView_partPhoto3">Photo</string>
+    <string name="textView_partPhoto4">Photo</string>
+    <string name="textView_partSelectCategory">Select Part Category</string>
+    <string name="textView_partName">Name</string>
+    <string name="textView_partPrice">Price</string>
+    <string name="textView_partDescription">Description</string>
+
+    <string name="btn_update">UPDATE</string>
+    <string name="btn_delete">DELETE</string>
+    <string name="btn_updateChoose1">Choose</string>
+    <string name="btn_updateChoose2">Choose</string>
+    <string name="btn_updateChoose3">Choose</string>
+    <string name="btn_updateChoose4">Choose</string>
+    <string name="textView_updatePartPhoto1">Photo</string>
+    <string name="textView_updatePartPhoto2">Photo</string>
+    <string name="textView_updatePartPhoto3">Photo</string>
+    <string name="textView_updatePartPhoto4">Photo</string>
+    <string name="textView_updatePartSelectCategory">Category</string>
+    <string name="textView_updatePartName">Name</string>
+    <string name="textView_updatePartPrice">Price</string>
+    <string name="textView_updatePartDescription">Description</string>
+
+    <string name="textView_adminPage">Admin Page</string>
+    <string name="textAdmin_add_part">ADD PART</string>
+    <string name="textAdmin_select_part">SELECT PARTS</string>
+    <string name="textAdmin__profile">HOME</string>
+
+    <string name="textView_partCategory">Select Part Category</string>
+    <string name="txt_part1">ROG STRIX HELIO</string>
+    <string name="txt_part2">ASUS TUF GAMING GT501</string>
+    <string name="txt_part3">COOLER MASTER MASTERCASE H500P MESH ARGB</string>
+    <string name="txt_part4">MSI MAG FORGE 100M</string>
+    <string name="btn_selectPart1">SELECT</string>
+    <string name="btn_selectPart2">SELECT</string>
+    <string name="btn_selectPart3">SELECT</string>
+    <string name="btn_selectPart4">SELECT</string>
+
+    <string name="partname_processor">Processor</string>
+    <string name="partname_moterboard">MoterBoard</string>
+    <string name="partname_powersupply">Power Supply</string>
+    <string name="partname_memory">Memory(Ram)</string>
+    <string name="partname_harddisk">Hard Disk</string>
+    <string name="partname_graphiccard">Graphic Card</string>
+    <string name="partname_opticaldrive">Optical Drive</string>
+    <string name="partname_monitor">Monitor</string>
+    <string name="partname_cooling_and_lighting">Cooling and Lighting</string>
+    <string name="partname_ssd">SSD</string>
+
+    <string name="editText_update_delete_rog_strix_helio">ROG STRIX HELIO</string>
+    <string name="editText_update_delete_description">Case Size - 251 x 545 x 552 mm (WxDxH) Weight - N.W. 10.5 kg Color - Black supports up to EATX with metal front panel, tempered-glass side panel, 120 mm RGB fan, 140 mm PWM fan, radiator space reserved, USB 3.1 Gen 1</string>
+    <string name="editText_update_delete_price">LKR 49,500.00</string>
+    <string name="editText_update_delete_name">Name</string>
+    <string name="textView_update_delete_part">Update/Delete Part</string>
+    <string name="btn_imageCasing4">Button</string>
+    <string name="textView_partTitle">Casings</string>
+    <string name="txtView_casing1name">ROG STRIX HELIO</string>
+    <string name="txtView_casing1Price">LKR 49,500.00</string>
+    <string name="txtView_casing2Price">LKR 35,000.00</string>
+    <string name="txtView_casing3name">COOLER MASTER MASTERCASE H500P MESH ARGB</string>
+    <string name="txtView_casing3price">LKR 29,000.00</string>
+    <string name="txtView_casing4name">MSI MAG FORGE 100M</string>
+    <string name="txtView_casing4price">15,000.00</string>
+    <string name="btn_image_casing1">Button</string>
+    <string name="btn_imagecasing3">Button</string>
+    <string name="btn_imagecasing2">Button</string>
+    <string name="txtView_casing2name">ASUS TUF GAMING GT501</string>
+
+>>>>>>> b9ced50... Computer Parts
 </resources>

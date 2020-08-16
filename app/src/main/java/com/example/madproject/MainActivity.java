@@ -12,7 +12,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+<<<<<<< HEAD
         Intent intent = new Intent(this, PCConf.class);
+=======
+        Intent intent = new Intent(this ,Home.class);
+>>>>>>> b9ced50... Computer Parts
         startActivity(intent);
     }
 }

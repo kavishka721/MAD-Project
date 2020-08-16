@@ -12,5 +12,8 @@
 /captures
 .externalNativeBuild
 .cxx
+<<<<<<< HEAD
 /app/src/main/res/layout/activity_configurepc.xml
 /app/src/main/java/com/example/madproject/configurepc.java
+=======
+>>>>>>> b9ced50... Computer Parts
