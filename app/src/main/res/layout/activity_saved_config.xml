@@ -63,7 +63,7 @@
                         android:layout_marginLeft="90dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/doppio_one"
-                        android:text="PC Build One"
+                        android:text="@string/pc_build_one"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -74,7 +74,7 @@
                         android:layout_marginLeft="250dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/doppio_one"
-                        android:text="Rs. 135000"
+                        android:text="@string/build_price1"
                         android:textColor="#393737"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -111,7 +111,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/doppio_one"
                         android:paddingTop="35dp"
-                        android:text="CPU : Core i3 9th Gen.\nRAM : 8GB\nMotherboard : Corsair\nHDD : 1TB"
+                        android:text="@string/config1_build"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -123,7 +123,7 @@
                         android:layout_marginTop="45dp"
                         android:background="@drawable/updatebtn"
                         android:fontFamily="@font/doppio_one"
-                        android:text="UPDATE"
+                        android:text="@string/updatebtn"
                         android:textColor="#F6F5F5"
                         android:textStyle="bold" />
 
@@ -136,7 +136,7 @@
                         android:background="@drawable/deletebtn"
                         android:elevation="8dp"
                         android:fontFamily="@font/doppio_one"
-                        android:text="DELETE"
+                        android:text="@string/deletebtn"
                         android:textColor="#F6F5F5"
                         android:textStyle="bold" />
 
@@ -163,7 +163,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/doppio_one"
                         android:paddingTop="35dp"
-                        android:text="CPU : Core i3 9th Gen.\nRAM : 8GB\nMotherboard : Corsair\nHDD : 1TB"
+                        android:text="@string/config2_build"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -176,7 +176,7 @@
                         android:background="@drawable/deletebtn"
                         android:elevation="8dp"
                         android:fontFamily="@font/doppio_one"
-                        android:text="DELETE"
+                        android:text="@string/deletebtn"
                         android:textColor="#F6F5F5"
                         android:textStyle="bold" />
 
@@ -188,7 +188,7 @@
                         android:layout_marginTop="45dp"
                         android:background="@drawable/updatebtn"
                         android:fontFamily="@font/doppio_one"
-                        android:text="UPDATE"
+                        android:text="@string/updatebtn"
                         android:textColor="#F6F5F5"
                         android:textStyle="bold" />
 
@@ -199,7 +199,7 @@
                         android:layout_marginLeft="250dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/doppio_one"
-                        android:text="Rs. 135000"
+                        android:text="@string/pc_build2_price"
                         android:textColor="#393737"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -211,7 +211,7 @@
                         android:layout_marginLeft="90dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/doppio_one"
-                        android:text="PC Build Two"
+                        android:text="@string/pc_build_two"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -261,7 +261,7 @@
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/doppio_one"
                         android:paddingTop="35dp"
-                        android:text="CPU : Core i3 9th Gen.\nRAM : 8GB\nMotherboard : Corsair\nHDD : 1TB"
+                        android:text="@string/config3_build"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -273,7 +273,7 @@
                         android:layout_marginTop="90dp"
                         android:background="@drawable/deletebtn"
                         android:fontFamily="@font/doppio_one"
-                        android:text="DELETE"
+                        android:text="@string/deletebtn"
                         android:textColor="#F6F5F5"
                         android:textStyle="bold" />
 
@@ -285,7 +285,7 @@
                         android:layout_marginTop="45dp"
                         android:background="@drawable/updatebtn"
                         android:fontFamily="@font/doppio_one"
-                        android:text="UPDATE"
+                        android:text="@string/updatebtn"
                         android:textColor="#F6F5F5"
                         android:textStyle="bold" />
 
@@ -296,7 +296,7 @@
                         android:layout_marginLeft="250dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/doppio_one"
-                        android:text="Rs. 135000"
+                        android:text="@string/build_price3"
                         android:textColor="#393737"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -308,7 +308,7 @@
                         android:layout_marginLeft="90dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="@font/doppio_one"
-                        android:text="PC Build Three"
+                        android:text="@string/pc_build_three"
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -348,7 +348,7 @@
         android:layout_marginTop="92dp"
         android:layout_marginEnd="120dp"
         android:fontFamily="@font/doppio_one"
-        android:text="Saved\nConfigurations"
+        android:text="@string/saved_nconfigurations"
         android:textAlignment="center"
         android:textColor="#F6F0F0"
         android:textSize="24sp"
