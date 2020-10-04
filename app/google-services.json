@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "328635468899",
+    "firebase_url": "https://placemyorder-78375.firebaseio.com",
+    "project_id": "placemyorder-78375",
+    "storage_bucket": "placemyorder-78375.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:328635468899:android:502906f2a483c54074fc56",
+        "android_client_info": {
+          "package_name": "com.example.placemyorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "328635468899-osk4fcl3i1saethjm2c9rddvc76gn9qd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.placemyorder",
+            "certificate_hash": "457017a4b4706804d55a27af4c77cd3142d489ca"
+          }
+        },
+        {
+          "client_id": "328635468899-v6b2sa76jqa95ppskd7i6i07j12o7ado.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-DiJVq4BqO2Hl1Yt0ETkPYx_H0fiAtfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "328635468899-v6b2sa76jqa95ppskd7i6i07j12o7ado.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
