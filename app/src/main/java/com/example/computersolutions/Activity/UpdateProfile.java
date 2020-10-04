@@ -1,10 +1,12 @@
-package com.example.computersolutions;
+package com.example.computersolutions.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class updateProfile extends AppCompatActivity {
+import com.example.computersolutions.R;
+
+public class UpdateProfile extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
