@@ -33,7 +33,7 @@ public class PCConf extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PCConf.this, savedConfig.class);
+                Intent intent = new Intent(PCConf.this, savedConfigNew.class);
                 startActivity(intent);
             }
         });

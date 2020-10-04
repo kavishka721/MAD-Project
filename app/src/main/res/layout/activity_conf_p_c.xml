@@ -30,7 +30,7 @@
                 tools:context=".configurepc">
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/TotalBuild"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="176dp"
@@ -44,7 +44,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/button10"
+                    android:id="@+id/CasingSelect"
                     android:layout_width="64dp"
                     android:layout_height="31dp"
                     android:layout_marginEnd="8dp"
@@ -54,11 +54,11 @@
                     android:text="@string/addbtn_1"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/button9"
+                    app:layout_constraintBottom_toTopOf="@+id/CPUSelect"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/PSSelect"
                     android:layout_width="64dp"
                     android:layout_height="31dp"
                     android:layout_marginEnd="8dp"
@@ -68,11 +68,11 @@
                     android:text="@string/addbtn_1"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/button2"
+                    app:layout_constraintBottom_toTopOf="@+id/COOLSelect"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName9"
+                    android:id="@+id/CasingText"
                     android:layout_width="268dp"
                     android:layout_height="31dp"
                     android:layout_marginTop="36dp"
@@ -87,11 +87,11 @@
                     android:paddingLeft="10dp"
                     android:textColorLink="#535353"
                     android:textCursorDrawable="?android:attr/textCursorDrawable"
-                    app:layout_constraintEnd_toStartOf="@+id/button10"
+                    app:layout_constraintEnd_toStartOf="@+id/CasingSelect"
                     app:layout_constraintTop_toTopOf="@+id/textView5" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName8"
+                    android:id="@+id/CoolingText"
                     android:layout_width="268dp"
                     android:layout_height="31dp"
                     android:layout_marginTop="10dp"
@@ -106,11 +106,11 @@
                     android:paddingLeft="10dp"
                     android:textColorLink="#535353"
                     android:textCursorDrawable="?android:attr/textCursorDrawable"
-                    app:layout_constraintEnd_toStartOf="@+id/button2"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+                    app:layout_constraintEnd_toStartOf="@+id/COOLSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/PSText" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/CPU_Name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
@@ -128,12 +128,12 @@
                     android:layout_height="35dp"
                     android:layout_marginStart="1dp"
                     android:layout_marginBottom="17dp"
-                    app:layout_constraintBottom_toTopOf="@+id/button11"
+                    app:layout_constraintBottom_toTopOf="@+id/SaveBtn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:srcCompat="@drawable/cfan" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/COOLSelect"
                     android:layout_width="64dp"
                     android:layout_height="31dp"
                     android:layout_marginEnd="8dp"
@@ -147,7 +147,7 @@
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName7"
+                    android:id="@+id/PSText"
                     android:layout_width="268dp"
                     android:layout_height="31dp"
                     android:layout_marginEnd="12dp"
@@ -163,7 +163,7 @@
                     android:textColorLink="#535353"
                     android:textCursorDrawable="?android:attr/textCursorDrawable"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/button3" />
+                    app:layout_constraintEnd_toStartOf="@+id/PSSelect" />
 
                 <ImageView
                     android:id="@+id/imageView8"
@@ -180,12 +180,12 @@
                     android:layout_height="39dp"
                     android:layout_marginStart="2dp"
                     android:layout_marginBottom="11dp"
-                    app:layout_constraintBottom_toTopOf="@+id/textView3"
+                    app:layout_constraintBottom_toTopOf="@+id/CPU_Name"
                     app:layout_constraintStart_toStartOf="parent"
                     app:srcCompat="@drawable/m2ssd" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName6"
+                    android:id="@+id/SSDText"
                     android:layout_width="268dp"
                     android:layout_height="31dp"
                     android:layout_marginTop="10dp"
@@ -200,11 +200,11 @@
                     android:paddingLeft="10dp"
                     android:textColorLink="#535353"
                     android:textCursorDrawable="?android:attr/textCursorDrawable"
-                    app:layout_constraintEnd_toStartOf="@+id/button4"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+                    app:layout_constraintEnd_toStartOf="@+id/SSDSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/HDDText" />
 
                 <Button
-                    android:id="@+id/button5"
+                    android:id="@+id/HDDSelect"
                     android:layout_width="64dp"
                     android:layout_height="31dp"
                     android:layout_marginEnd="8dp"
@@ -214,11 +214,11 @@
                     android:text="@string/addbtn_1"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/button4"
+                    app:layout_constraintBottom_toTopOf="@+id/SSDSelect"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName3"
+                    android:id="@+id/HDDText"
                     android:layout_width="268dp"
                     android:layout_height="31dp"
                     android:layout_marginTop="10dp"
@@ -233,8 +233,8 @@
                     android:paddingLeft="10dp"
                     android:textColorLink="#535353"
                     android:textCursorDrawable="?android:attr/textCursorDrawable"
-                    app:layout_constraintEnd_toStartOf="@+id/button5"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                    app:layout_constraintEnd_toStartOf="@+id/HDDSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/CPU_Detail" />
 
                 <ImageView
                     android:id="@+id/imageView6"
@@ -246,7 +246,7 @@
                     app:srcCompat="@drawable/hdd" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/CPU_Detail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="3dp"
@@ -261,7 +261,7 @@
                     app:layout_constraintStart_toStartOf="parent" />
 
                 <Button
-                    android:id="@+id/button4"
+                    android:id="@+id/SSDSelect"
                     android:layout_width="64dp"
                     android:layout_height="31dp"
                     android:layout_marginEnd="8dp"
@@ -271,11 +271,11 @@
                     android:text="@string/addbtn_1"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/button3"
+                    app:layout_constraintBottom_toTopOf="@+id/PSSelect"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/CPUText"
                     android:layout_width="268dp"
                     android:layout_height="31dp"
                     android:layout_marginTop="9dp"
@@ -290,11 +290,11 @@
                     android:paddingLeft="10dp"
                     android:textColorLink="#535353"
                     android:textCursorDrawable="?android:attr/textCursorDrawable"
-                    app:layout_constraintEnd_toStartOf="@+id/button9"
+                    app:layout_constraintEnd_toStartOf="@+id/CPUSelect"
                     app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/RAMText"
                     android:layout_width="268dp"
                     android:layout_height="31dp"
                     android:layout_marginTop="10dp"
@@ -309,11 +309,11 @@
                     android:paddingLeft="10dp"
                     android:textColorLink="#535353"
                     android:textCursorDrawable="?android:attr/textCursorDrawable"
-                    app:layout_constraintEnd_toStartOf="@+id/button8"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+                    app:layout_constraintEnd_toStartOf="@+id/RAMSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/CPUText" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName5"
+                    android:id="@+id/MBText"
                     android:layout_width="268dp"
                     android:layout_height="31dp"
                     android:layout_marginTop="10dp"
@@ -328,11 +328,11 @@
                     android:paddingLeft="10dp"
                     android:textColorLink="#535353"
                     android:textCursorDrawable="?android:attr/textCursorDrawable"
-                    app:layout_constraintEnd_toStartOf="@+id/button7"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+                    app:layout_constraintEnd_toStartOf="@+id/MBSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/RAMText" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName4"
+                    android:id="@+id/GPUText"
                     android:layout_width="268dp"
                     android:layout_height="31dp"
                     android:layout_marginTop="10dp"
@@ -347,11 +347,11 @@
                     android:paddingLeft="10dp"
                     android:textColorLink="#535353"
                     android:textCursorDrawable="?android:attr/textCursorDrawable"
-                    app:layout_constraintEnd_toStartOf="@+id/button6"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+                    app:layout_constraintEnd_toStartOf="@+id/GPUSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/MBText" />
 
                 <Button
-                    android:id="@+id/button9"
+                    android:id="@+id/CPUSelect"
                     android:layout_width="64dp"
                     android:layout_height="31dp"
                     android:layout_marginEnd="8dp"
@@ -361,11 +361,11 @@
                     android:text="@string/addbtn_1"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/button8"
+                    app:layout_constraintBottom_toTopOf="@+id/RAMSelect"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <Button
-                    android:id="@+id/button8"
+                    android:id="@+id/RAMSelect"
                     android:layout_width="64dp"
                     android:layout_height="31dp"
                     android:layout_marginEnd="8dp"
@@ -375,11 +375,11 @@
                     android:text="@string/addbtn_1"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/button7"
+                    app:layout_constraintBottom_toTopOf="@+id/MBSelect"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <Button
-                    android:id="@+id/button7"
+                    android:id="@+id/MBSelect"
                     android:layout_width="64dp"
                     android:layout_height="31dp"
                     android:layout_marginEnd="8dp"
@@ -389,7 +389,7 @@
                     android:text="@string/addbtn_1"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/button6"
+                    app:layout_constraintBottom_toTopOf="@+id/GPUSelect"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <ImageView
@@ -398,7 +398,7 @@
                     android:layout_height="43dp"
                     android:layout_marginStart="2dp"
                     android:layout_marginBottom="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/textView2"
+                    app:layout_constraintBottom_toTopOf="@+id/CPU_Detail"
                     app:layout_constraintStart_toStartOf="parent"
                     app:srcCompat="@drawable/gpu" />
 
@@ -433,7 +433,7 @@
                     app:srcCompat="@drawable/cpu" />
 
                 <Button
-                    android:id="@+id/button6"
+                    android:id="@+id/GPUSelect"
                     android:layout_width="64dp"
                     android:layout_height="31dp"
                     android:layout_marginEnd="8dp"
@@ -443,7 +443,7 @@
                     android:text="@string/addbtn_1"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toTopOf="@+id/button5"
+                    app:layout_constraintBottom_toTopOf="@+id/HDDSelect"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <TextView
@@ -497,7 +497,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <Button
-                    android:id="@+id/button11"
+                    android:id="@+id/SaveBtn"
                     android:layout_width="136dp"
                     android:layout_height="42dp"
                     android:layout_marginStart="50dp"
