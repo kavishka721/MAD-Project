@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#414343"
+    android:backgroundTint="#636363"
+    tools:context=".selectPart">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_partCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/doppio_one"
+            android:padding="16dp"
+            android:text="@string/textView_partSelectCategory"
+            android:textColor="@color/textColor"
+            android:textSize="24sp"
+            android:textStyle="normal" />
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/input1"
+            android:backgroundTint="#C1534F4F"
+            android:foregroundTint="#8C0C0C"
+            android:foregroundTintMode="src_over" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_part1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/doppio_one"
+                android:text="Corsair Vengeance RGB Pro 32GB"
+                android:textColor="@color/textColor" />
+
+            <Button
+                android:id="@+id/btn_selectPart1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#00ACC1"
+                android:text="@string/btn_selectPart1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView_part2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/doppio_one"
+                android:text="HyperX Fury 16GB 2666MHz DDR4 "
+                android:textColor="@color/textColor" />
+
+            <Button
+                android:id="@+id/btn_selectPart2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#00ACC1"
+                android:text="@string/btn_selectPart2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView_part3"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/doppio_one"
+                android:text="Dell 8GB DDR4 SDRAM Memory card"
+                android:textColor="@color/textColor" />
+
+            <Button
+                android:id="@+id/btn_selectPart3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#00ACC1"
+                android:text="@string/btn_selectPart3" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView_part4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/doppio_one"
+                android:text="Kingston HyperX FURY 8GB DDR3"
+                android:textColor="@color/textColor" />
+
+            <Button
+                android:id="@+id/btn_selectPart4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#00ACC1"
+                android:text="@string/btn_selectPart4" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView_part5"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/doppio_one"
+                android:text="Kingston HyperX Predator DDR3 RAM"
+                android:textColor="@color/textColor" />
+
+            <Button
+                android:id="@+id/btn_selectPart5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#00ACC1"
+                android:text="@string/btn_selectPart3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView_part6"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/doppio_one"
+                android:text="Corsair Dominator Platinum RGB  RAM"
+                android:textColor="@color/textColor" />
+
+            <Button
+                android:id="@+id/btn_selectPart6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#00ACC1"
+                android:text="@string/btn_selectPart3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView_part7"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/doppio_one"
+                android:text="Adata Spectrix D80 RAM"
+                android:textColor="@color/textColor" />
+
+            <Button
+                android:id="@+id/btn_selectPart7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#00ACC1"
+                android:text="@string/btn_selectPart3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView_part8"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/doppio_one"
+                android:text="Kingston HyperX Predator – best DDR3 RAM"
+                android:textColor="@color/textColor" />
+
+            <Button
+                android:id="@+id/btn_selectPart8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="#00ACC1"
+                android:text="@string/btn_selectPart3" />
+        </LinearLayout>
+
+        <![CDATA[
+
+        androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    ]]>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

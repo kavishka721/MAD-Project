@@ -1,0 +1,253 @@
+<resources>
+    <string name="app_name">MADProject</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    <string-array name="category">
+        <item>Casing</item>
+        <item>Processor</item>
+        <item>MotherBoard</item>
+        <item>Powersupply</item>
+        <item>Ram Card</item>
+    </string-array>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="total_price">Rs. 268500</string>
+    <string name="addbtn_1">ADD</string>
+    <string name="casing_input">Select Casing</string>
+    <string name="hdd_input">ADD</string>
+    <string name="cooling_system_input">Select Cooling System</string>
+    <string name="power_and_cooling">Power and Cooling</string>
+    <string name="total">Total</string>
+    <string name="resetbtn_text">RESET</string>
+    <string name="savebtn_text">Save</string>
+    <string name="configure_parts">Configure Parts</string>
+    <string name="casing">Casing</string>
+    <string name="core_component">Core Component</string>
+    <string name="hard_drive">Hard Drive</string>
+    <string name="ram">16GB 2666 DDR4</string>
+    <string name="pc_build_one">PC Build One</string>
+    <string name="build_price1">Rs. 135000</string>
+    <string name="config1_build">CPU : Core i3 9th Gen.\nRAM : 8GB\nMotherboard : Corsair\nHDD : 1TB</string>
+    <string name="updatebtn">UPDATE</string>
+    <string name="deletebtn">DELETE</string>
+    <string name="pc_build2_price">Rs. 135000</string>
+    <string name="build_price3">Rs. 135000</string>
+    <string name="saved_nconfigurations">Saved\nConfigurations</string>
+    <string name="config2_build">CPU : Core i7 9th Gen.\nRAM : 16GB\nMotherboard : Asus Pro\nHDD : 2TB</string>
+    <string name="config3_build">CPU : Core i5 9th Gen.\nRAM : 16GB\nMotherboard : Gigabyte\nHDD : 4TB</string>
+    <string name="pc_build_three">PC Build Three</string>
+    <string name="pc_build_two">PC Build Two</string>
+    <string name="create_pcbtn">Create\nPC</string>
+    <string name="saved_confbtn">SAVED\nCONF.</string>
+    <string name="pc_configuration_station">PC Configuration\nStation</string>
+    <string name="proc_price1">RS. 162000</string>
+    <string name="proc_price2">RS. 125000</string>
+    <string name="proc_price3">RS. 100000</string>
+    <string name="pros_detail1">CPU Cores : 16\nThreads : 32\nBase Clock : 3.5GHz\nMax Boost Clock : 4.7GHz\nL1 Cache : 1MB\nL2 Cache : 8MB\nL3 Cache : 64MB\nWarranty : 3Yrs</string>
+    <string name="pros_detail2">CPU Cores : 10\nThreads : 20\nBase Clock : 3.7GHz\nMax Boost Clock : 5.3GHz\nL1 Cache : 1MB\nL2 Cache : 8MB\nL3 Cache : 64MB\nWarranty : 3Yrs</string>
+    <string name="pros_detail4">CPU Cores : 12\nThreads : 24\nBase Clock : 3.8GHz\nMax Boost Clock : 4.6GHz\nL1 Cache : 1MB\nL2 Cache : 6MB\nL3 Cache : 64MB\nWarranty : 3Yrs</string>
+    <string name="prosessors">Prosessors</string>
+    <string name="selectbtn">SELECT</string>
+    <string name="pros_name1">AMD RYZEN™ 9 3950X</string>
+    <string name="pros_name2">INTEL® CORE™ I9-10900K</string>
+    <string name="pros_name3">INTEL® CORE™ I7-10700K</string>
+    <string name="pros_name4">AMD RYZEN™ 9 3900X</string>
+    <string name="proc_price4">RS. 86000</string>
+    <string name="pros_details3">CPU Cores : 8\nThreads : 16\nBase Clock : 3.8GHz\nMax Boost Clock : 5.1GHz\nL1 Cache : 1MB\nL2 Cache : 8MB\nL3 Cache : 64MB\nWarranty : 3Yrs</string>
+    <string name="zero_total">Rs. 0</string>
+    <string name="select_casing_hint">Select Casing</string>
+    <string name="select_cooling_system_hint">Select Cooling System</string>
+    <string name="select_power_supply_hint">Select Power Supply</string>
+    <string name="select_m2_ssd_hint">Select M2. SSD</string>
+    <string name="select_ram_hint">Select RAM</string>
+    <string name="select_hard_drive_hint">Select Hard Drive</string>
+    <string name="select_cpu_hint">Select CPU</string>
+    <string name="select_motherboard_hint">Select Motherboard</string>
+    <string name="select_gpu_hint">Select GPU</string>
+    <string name="save_btn">Save</string>
+    <string name="reset_btn">RESET</string>
+    <string name="fab_content_desc">Click Me</string>
+
+    <!--  kavishka  -->
+
+    <!-- <string name="action_settings">Settings</string>    -->
+    <string name="title_activity_scrolltest">ScrollingActivity</string>
+    <string name="txtComputerPartH">Computer Parts</string>
+    <string name="txtAddPart">Add Part</string>
+
+
+    <!--   <string name="app_name">ComputerSolutions</string>  -->
+    <string name="textViewHome1">Computer Parts</string>
+    <!-- <string name="casing">Casing</string>   -->
+    <string name="btn_addPart">ADD</string>
+    <string name="btn_choose1">Choose</string>
+    <string name="btn_choose2">Choose</string>
+    <string name="btn_choose3">Choose</string>
+    <string name="btn_choose4">Choose</string>
+    <string name="textView_partPhoto1">Photo</string>
+    <string name="textView_partPhoto2">Photo</string>
+    <string name="textView_partPhoto3">Photo</string>
+    <string name="textView_partPhoto4">Photo</string>
+    <string name="textView_partSelectCategory">Select Part Category</string>
+    <string name="textView_partName">Name</string>
+    <string name="textView_partPrice">Price</string>
+    <string name="textView_partDescription">Description</string>
+
+    <string name="btn_update">UPDATE</string>
+    <string name="btn_delete">DELETE</string>
+    <string name="btn_updateChoose1">Choose</string>
+    <string name="btn_updateChoose2">Choose</string>
+    <string name="btn_updateChoose3">Choose</string>
+    <string name="btn_updateChoose4">Choose</string>
+    <string name="textView_updatePartPhoto1">Photo</string>
+    <string name="textView_updatePartPhoto2">Photo</string>
+    <string name="textView_updatePartPhoto3">Photo</string>
+    <string name="textView_updatePartPhoto4">Photo</string>
+    <string name="textView_updatePartSelectCategory">Category</string>
+    <string name="textView_updatePartName">Name</string>
+    <string name="textView_updatePartPrice">Price</string>
+    <string name="textView_updatePartDescription">Description</string>
+
+    <string name="textView_adminPage">Admin Page</string>
+    <string name="textAdmin_add_part">ADD PART</string>
+    <string name="textAdmin_select_part">SELECT PARTS</string>
+    <string name="textAdmin__profile">HOME</string>
+
+    <string name="textView_partCategory">Select Part Category</string>
+    <string name="txt_part1">ROG STRIX HELIO</string>
+    <string name="txt_part2">ASUS TUF GAMING GT501</string>
+    <string name="txt_part3">COOLER MASTER MASTERCASE H500P MESH ARGB</string>
+    <string name="txt_part4">MSI MAG FORGE 100M</string>
+    <string name="btn_selectPart1">SELECT</string>
+    <string name="btn_selectPart2">SELECT</string>
+    <string name="btn_selectPart3">SELECT</string>
+    <string name="btn_selectPart4">SELECT</string>
+
+    <string name="partname_processor">Processor</string>
+    <string name="partname_moterboard">MoterBoard</string>
+    <string name="partname_powersupply">Power Supply</string>
+    <string name="partname_memory">Memory(Ram)</string>
+    <string name="partname_harddisk">Hard Disk</string>
+    <string name="partname_graphiccard">Graphic Card</string>
+    <string name="partname_opticaldrive">Optical Drive</string>
+    <string name="partname_monitor">Monitor</string>
+    <string name="partname_cooling_and_lighting">Cooling and Lighting</string>
+    <string name="partname_ssd">SSD</string>
+
+    <string name="editText_update_delete_rog_strix_helio">ROG STRIX HELIO</string>
+    <string name="editText_update_delete_description">Case Size - 251 x 545 x 552 mm (WxDxH) Weight - N.W. 10.5 kg Color - Black supports up to EATX with metal front panel, tempered-glass side panel, 120 mm RGB fan, 140 mm PWM fan, radiator space reserved, USB 3.1 Gen 1</string>
+    <string name="editText_update_delete_price">LKR 49,500.00</string>
+    <string name="editText_update_delete_name">Name</string>
+    <string name="textView_update_delete_part">Update/Delete Part</string>
+    <string name="btn_imageCasing4">Button</string>
+    <string name="textView_partTitle">Casings</string>
+    <string name="txtView_casing1name">ROG STRIX HELIO</string>
+    <string name="txtView_casing1Price">LKR 49,500.00</string>
+    <string name="txtView_casing2Price">LKR 35,000.00</string>
+    <string name="txtView_casing3name">COOLER MASTER MASTERCASE H500P MESH ARGB</string>
+    <string name="txtView_casing3price">LKR 29,000.00</string>
+    <string name="txtView_casing4name">MSI MAG FORGE 100M</string>
+    <string name="txtView_casing4price">15,000.00</string>
+    <string name="btn_image_casing1">Button</string>
+    <string name="btn_imagecasing3">Button</string>
+    <string name="btn_imagecasing2">Button</string>
+    <string name="txtView_casing2name">ASUS TUF GAMING GT501</string>
+    <string name="navhome">HOME</string>
+    <string name="navcart">CART</string>
+    <string name="navconfg">CONFIG PC</string>
+    <string name="navprofile">PROFILE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

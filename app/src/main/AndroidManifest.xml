@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.madproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".bottomNavbar.bottomanavbar">
+
+        </activity>
+        <activity android:name=".cart" />
+        <activity android:name=".updateconfig" />
+        <activity android:name=".cpuselection" />
+        <activity android:name=".selections.cpuselectionNew" />
+        <activity android:name=".selections.casingselection" />
+        <activity android:name=".selections.ramselection" />
+        <activity android:name=".selections.gpuselection" />
+        <activity android:name=".selections.psselection" />
+        <activity android:name=".selections.hddselection" />
+        <activity android:name=".selections.ssdselection" />
+        <activity android:name=".selections.coolselection" />
+        <activity android:name=".selections.mbselection" />
+        <activity android:name=".savedConfig" />
+        <activity android:name=".savedConfigNew" />
+        <activity android:name=".ConfPC" />
+        <activity android:name=".configurepc" />
+        <activity android:name=".PCConf" />
+        <activity android:name=".MainActivity" /> <!-- kavishka -->
+        <activity android:name=".Home">
+
+        </activity>
+        <activity android:name=".addPart" >
+
+
+        </activity>
+        <activity android:name=".viewparts" />
+        <activity android:name=".AdminPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- end -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

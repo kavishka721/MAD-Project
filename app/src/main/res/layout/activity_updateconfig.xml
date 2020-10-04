@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateconfig">
+
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="665dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="795dp"
+                android:background="#423E3E"
+                tools:context=".configurepc">
+
+                <TextView
+                    android:id="@+id/TotalBuild"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="176dp"
+                    android:layout_marginEnd="68dp"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/total_price"
+                    android:textColor="#E6DDDD"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/CasingSelect"
+                    android:layout_width="64dp"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="47dp"
+                    android:background="@drawable/btn1"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/addbtn_1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/CPUSelect"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/PSSelect"
+                    android:layout_width="64dp"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn1"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/addbtn_1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/COOLSelect"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <EditText
+                    android:id="@+id/CasingText"
+                    android:layout_width="268dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="12dp"
+                    android:autofillHints=""
+                    android:background="@drawable/input1"
+                    android:elevation="32dp"
+                    android:ems="10"
+                    android:fontFamily="@font/doppio_one"
+                    android:hint="@string/casing_input"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:text="Cooler Master MB511 RGB"
+                    android:textColorLink="#535353"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    app:layout_constraintEnd_toStartOf="@+id/CasingSelect"
+                    app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName8"
+                    android:layout_width="268dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:autofillHints=""
+                    android:background="@drawable/input1"
+                    android:elevation="32dp"
+                    android:ems="10"
+                    android:fontFamily="@font/doppio_one"
+                    android:hint="@string/cooling_system_input"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:text="COOLER MASTER MASTERLIQUID ML240R RGB"
+                    android:textColorLink="#535353"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    app:layout_constraintEnd_toStartOf="@+id/COOLSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" />
+
+                <TextView
+                    android:id="@+id/CPU_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/power_and_cooling"
+                    android:textColor="#B1ACAC"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView8"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="51dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="1dp"
+                    android:layout_marginBottom="17dp"
+                    app:layout_constraintBottom_toTopOf="@+id/SaveBtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/cfan" />
+
+                <Button
+                    android:id="@+id/COOLSelect"
+                    android:layout_width="64dp"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="21dp"
+                    android:background="@drawable/btn1"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/addbtn_1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/button12"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName7"
+                    android:layout_width="268dp"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="116dp"
+                    android:autofillHints=""
+                    android:background="@drawable/input1"
+                    android:elevation="32dp"
+                    android:ems="10"
+                    android:fontFamily="@font/doppio_one"
+                    android:hint="Select Power Supply"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:text="CORSAIR HXI SERIES™ HX1200I 80+ PLATINUM MODULAR"
+                    android:textColorLink="#535353"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/PSSelect" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="37dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="9dp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/psupply" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="45dp"
+                    android:layout_height="39dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginBottom="11dp"
+                    app:layout_constraintBottom_toTopOf="@+id/CPU_Name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/m2ssd" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName6"
+                    android:layout_width="268dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:autofillHints=""
+                    android:background="@drawable/input1"
+                    android:elevation="32dp"
+                    android:ems="10"
+                    android:fontFamily="@font/doppio_one"
+                    android:hint="Select M2. SSD"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:text="LEXAR® PROFESSIONAL NM700 250GB NVME"
+                    android:textColorLink="#535353"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    app:layout_constraintEnd_toStartOf="@+id/SSDSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+                <Button
+                    android:id="@+id/HDDSelect"
+                    android:layout_width="64dp"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn1"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/addbtn_1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/SSDSelect"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    android:layout_width="268dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:autofillHints=""
+                    android:background="@drawable/input1"
+                    android:elevation="32dp"
+                    android:ems="10"
+                    android:fontFamily="@font/doppio_one"
+                    android:hint="Select Hard Drive"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:text="SEAGATE BARRACUDA 2TB ST2000DM005"
+                    android:textColorLink="#535353"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    app:layout_constraintEnd_toStartOf="@+id/HDDSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/CPU_Detail" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="42dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="4dp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/hdd" />
+
+                <TextView
+                    android:id="@+id/CPU_Detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/hard_drive"
+                    android:textColor="#B1ACAC"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.051"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/SSDSelect"
+                    android:layout_width="64dp"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="43dp"
+                    android:background="@drawable/btn1"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/addbtn_1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/PSSelect"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <EditText
+                    android:id="@+id/CPUText"
+                    android:layout_width="268dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="12dp"
+                    android:autofillHints=""
+                    android:background="@drawable/input1"
+                    android:elevation="32dp"
+                    android:ems="10"
+                    android:fontFamily="@font/doppio_one"
+                    android:hint="Select CPU"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:text="Intel® Core™ i5-9400F"
+                    android:textColorLink="#535353"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    app:layout_constraintEnd_toStartOf="@+id/CPUSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName"
+                    android:layout_width="268dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:autofillHints=""
+                    android:background="@drawable/input1"
+                    android:elevation="32dp"
+                    android:ems="10"
+                    android:fontFamily="@font/doppio_one"
+                    android:hint="Select RAM"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:text="@string/ram"
+                    android:textColorLink="#535353"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    app:layout_constraintEnd_toStartOf="@+id/RAMSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/CPUText" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName5"
+                    android:layout_width="268dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:autofillHints=""
+                    android:background="@drawable/input1"
+                    android:elevation="32dp"
+                    android:ems="10"
+                    android:fontFamily="@font/doppio_one"
+                    android:hint="Select Motherboard"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:text="ASUS ROG STRIX Z490-F"
+                    android:textColorLink="#535353"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    app:layout_constraintEnd_toStartOf="@+id/MBSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName4"
+                    android:layout_width="268dp"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:autofillHints=""
+                    android:background="@drawable/input1"
+                    android:elevation="32dp"
+                    android:ems="10"
+                    android:fontFamily="@font/doppio_one"
+                    android:hint="Select GPU"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="10dp"
+                    android:text="RTX 2060 SUPER 8GB DDR6"
+                    android:textColorLink="#535353"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    app:layout_constraintEnd_toStartOf="@+id/GPUSelect"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+
+                <Button
+                    android:id="@+id/CPUSelect"
+                    android:layout_width="64dp"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn1"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/addbtn_1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/RAMSelect"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/RAMSelect"
+                    android:layout_width="64dp"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn1"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/addbtn_1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/MBSelect"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <Button
+                    android:id="@+id/MBSelect"
+                    android:layout_width="64dp"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn1"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/addbtn_1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/GPUSelect"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="45dp"
+                    android:layout_height="43dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toTopOf="@+id/CPU_Detail"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/gpu" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="35dp"
+                    android:layout_height="34dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="4dp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/motherboard" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="40dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="2dp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/ram" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="42dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginBottom="3dp"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/cpu" />
+
+                <Button
+                    android:id="@+id/GPUSelect"
+                    android:layout_width="64dp"
+                    android:layout_height="31dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="45dp"
+                    android:background="@drawable/btn1"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/addbtn_1"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/HDDSelect"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/core_component"
+                    android:textColor="#B1ACAC"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="13dp"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/casing"
+                    android:textColor="#B1ACAC"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="60dp"
+                    android:layout_height="46dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5"
+                    app:srcCompat="@drawable/casing" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="108dp"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/configure_parts"
+                    android:textColor="#F6F0F0"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/SaveBtn"
+                    android:layout_width="136dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/save1"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/savebtn_text"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="136dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="42dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/reset1"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/resetbtn_text"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="290dp"
+                    android:layout_height="164dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/intersec2" />
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="198dp"
+                    android:layout_height="164dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/intersec" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:layout_marginTop="176dp"
+                    android:fontFamily="@font/doppio_one"
+                    android:text="@string/total"
+                    android:textColor="#E6DDDD"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView21" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
