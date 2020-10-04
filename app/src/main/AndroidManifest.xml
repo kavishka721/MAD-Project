@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".updateconfig"></activity>
         <activity android:name=".cpuselection" />
         <activity android:name=".selections.cpuselectionNew" />
@@ -30,14 +31,35 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+=======
+        <activity android:name=".selectPart"></activity>
+        <activity android:name=".AdminPage" />
+        <activity android:name=".UpdateDelete_Part" />
+        <activity android:name=".AddParts" />
+        <activity android:name=".ViewParts" >
+
+        </activity>
+
+        <activity android:name=".Home" >
+
+        </activity>
+
+        <activity android:name=".MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+>>>>>>> b9ced50... Computer Parts
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+<<<<<<< HEAD
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+=======
+
+>>>>>>> b9ced50... Computer Parts
     </application>
 
 </manifest>
