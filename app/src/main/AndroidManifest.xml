@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.madproject">
 
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,7 +14,17 @@
 <<<<<<< HEAD
         <activity android:name=".updateconfig"></activity>
         <activity android:name=".cpuselection" />
+        <activity android:name=".selections.cpuselectionNew" />
+        <activity android:name=".selections.casingselection" />
+        <activity android:name=".selections.gpuselection" />
+        <activity android:name=".selections.psselection" />
+        <activity android:name=".selections.hddselection" />
+        <activity android:name=".selections.ssdselection" />
+        <activity android:name=".selections.coolselection" />
+        <activity android:name=".selections.mbselection" />
+        <activity android:name=".selections.ramselection" />
         <activity android:name=".savedConfig" />
+        <activity android:name=".savedConfigNew" />
         <activity android:name=".ConfPC" />
         <activity android:name=".configurepc" />
         <activity android:name=".PCConf" />

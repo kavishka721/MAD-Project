@@ -14,7 +14,7 @@ public class savedConfig extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saved_config);
-        updatebtn = findViewById(R.id.button14);
+        updatebtn = findViewById(R.id.Update_Btn);
     }
 
     @Override

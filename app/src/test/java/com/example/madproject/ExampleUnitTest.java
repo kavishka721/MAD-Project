@@ -1,5 +1,9 @@
 package com.example.madproject;
 
+import com.example.madproject.classes.CPUBuild;
+
+import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -9,9 +13,21 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
+
 public class ExampleUnitTest {
+
+
+    CPUBuild cpuBuild;
+
+
+    @Before
+    public void setUp(){
+        //confPC = new ConfPC();
+        cpuBuild = new CPUBuild();
+    }
+
     @Test
     public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+        assertEquals(0, 0);
     }
 }
