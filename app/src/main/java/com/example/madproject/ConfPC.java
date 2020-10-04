@@ -55,7 +55,7 @@ public class ConfPC extends AppCompatActivity {
     Button psbtn;
     Button coolbtn;
     Button savebtn;
-    static Integer Total=0;
+    Integer Total=0;
     TextView BuildTotal;
     int LAUNCH_SECOND_ACTIVITY = 1;
     int LAUNCH_THIRD_ACTIVITY = 1;
@@ -114,11 +114,6 @@ public class ConfPC extends AppCompatActivity {
 
     }
 
-    public static Integer getTotal(){
-
-        return Total;
-
-    }
 
     @Override
     protected void onResume() {
