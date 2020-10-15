@@ -31,7 +31,7 @@ import java.util.ArrayList;
 public class viewparts extends AppCompatActivity {
 
     private ArrayList<Parts> partList;
-    private Context myCongext;
+    private Context myContext;
     RecyclerView recyclerView;
     partRecyclerViewAdapter adapter;
     DatabaseReference databaseReference;
@@ -47,12 +47,11 @@ public class viewparts extends AppCompatActivity {
         categorytxt = findViewById(R.id.categorynametxt);
         selectBtn = findViewById(R.id.imgselectbtn);
 
+        //get string from the intent and set to textview
         Intent newIntent = getIntent();
         final String cName = newIntent.getStringExtra("categoryName");
-
         categorytxt.setText(cName);
-        System.out.println(cName);
-        Log.d("TAG",cName);
+
         partList = new ArrayList<>();
 
         recyclerView = findViewById(R.id.partRecycleView);
@@ -64,6 +63,7 @@ public class viewparts extends AppCompatActivity {
         ref.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
+
                 for(DataSnapshot dataSnapshot : snapshot.getChildren()){
                     System.out.println(dataSnapshot);
                     Parts part = new Parts();
@@ -71,28 +71,27 @@ public class viewparts extends AppCompatActivity {
                  part.setImageUri(dataSnapshot.child("imageUri").getValue().toString());
                  part.setpName(dataSnapshot.child("pName").getValue().toString());
                  part.setpPrice(dataSnapshot.child("pPrice").getValue().toString());
+                 part.setpDescription(dataSnapshot.child("pDescription").toString());
+                 part.setCategory(dataSnapshot.child("category").getValue().toString());
+                 part.setKey(dataSnapshot.getKey());
 
                  System.out.println(part.getImageUri());
                  System.out.println(part.getpName());
                  System.out.println(part.getpPrice());
+                 System.out.println(part.getpDescription());
 
 
                  partList.add(part);
 
-//                 selectBtn.setOnClickListener(new View.OnClickListener() {
-//                     @Override
-//                     public void onClick(View v) {
-//                         selectImage();
-//                     }
-//                 });
-
                 }
 
+
                 adapter = new partRecyclerViewAdapter(getApplicationContext(),partList);
-                recyclerView.setLayoutManager(new LinearLayoutManager(myCongext));
+                recyclerView.setLayoutManager(new LinearLayoutManager(myContext));
                 recyclerView.getLayoutManager().setMeasurementCacheEnabled(false);
                 recyclerView.setAdapter(adapter);
                 recyclerView.setHasFixedSize(true);
+
 
             }
 
@@ -103,16 +102,17 @@ public class viewparts extends AppCompatActivity {
         });
 
 
+
     }
 
-    private void selectImage(){
-        Intent intent = new Intent(this,cart.class);
-        intent.putExtra("pname",partList.get(3).toString());
-        intent.putExtra("price",partList.get(1).toString());
-        System.out.println(intent.getExtras());
-        intent.putExtra("description",partList.get(4).toString());
-        startActivity(intent);
-    }
+//    private void selectImage(){
+//        Intent intent = new Intent(viewparts.this,cart.class);
+//        intent.putExtra("pname",partList.get(3).toString());
+//        //  intent.putExtra("price",partList.get(1).toString());
+//        System.out.println(intent.getExtras());
+//        // intent.putExtra("description",partList.get(4).toString());
+//        startActivity(intent);
+//    }
 
     private void clearAll(){
         if (partList != null){

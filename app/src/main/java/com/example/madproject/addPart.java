@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -55,6 +56,7 @@ public class addPart extends AppCompatActivity {
     Parts part;
     ImageView partimgview;
     String imageUri;
+    Context context;
 
     private  static final int pick_image_request = 71;
 
@@ -106,28 +108,18 @@ public class addPart extends AppCompatActivity {
                 System.out.println("DES:"+pDescription);
                 String pPrice = edtpPrice.getText().toString();
 
-               // int quantity = 10;
-
-               // String imageUrl;
-
-              /*  HashMap<String,String> part = new HashMap<>();
-
-                part.put("cName",categoryName);
-                part.put("pName",pName);
-                part.put("pDes",pDescription);
-                part.put("price",pPrice);   */
 
                 part = new Parts(categoryName,pName,pDescription,pPrice,imageUri);
                 System.out.println("OBJECT"+part.getImageUri());
 
-                //-----------------------upload image-------------------------------------------------------
+                //-----------------------upload image and save uri in imgUri-------------------------------------------------------
 
                 if(filePath != null){
-//                    final ProgressDialog progressDialog = new ProgressDialog(this);
+//                    final ProgressDialog progressDialog = new ProgressDialog(context);
 //                    progressDialog.setTitle("Uploading...");
 //                    progressDialog.show();
 
-                    String category = dropDownList.getSelectedItem().toString();
+                    //String category = dropDownList.getSelectedItem().toString();
                     final StorageReference ref = storageReference.child( categoryName).child(UUID.randomUUID().toString());
                     ref.putFile(filePath)
                             .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {

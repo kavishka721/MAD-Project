@@ -1,5 +1,6 @@
 package com.example.madproject.bottomNavbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,8 +8,10 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.example.madproject.R;
+import com.example.madproject.viewparts;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +19,8 @@ import com.example.madproject.R;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
+
+//    Button button3,button4,button9;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -54,13 +59,47 @@ public class HomeFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
+
+
+//            //casing select button
+//            button3 = button3.findViewById(R.id.button3);
+//            button4 = button4.findViewById(R.id.button4);
+//            button9 = button9.findViewById(R.id.button9);
+//
+//            button3.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    String categoryName = button3.getHint().toString();
+//                    selectImgBtn(categoryName);
+//                }
+//            });
+//            button4.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    String categoryName = button4.getHint().toString();
+//                    selectImgBtn(categoryName);
+//                }
+//            });
+
         }
+
+
+
     }
+
+//    private void selectImgBtn(String categoryName) {
+//
+//        Intent intent = new Intent(getContext(), viewparts.class);
+//        intent.putExtra("categoryName",categoryName);
+//        startActivity(intent);
+//    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
 }

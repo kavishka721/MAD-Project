@@ -17,7 +17,7 @@ public class Parts {
 
     public Parts() { }
 
-    public Parts( String category, String pName, String pDescription, String pPrice,String imageUri) {
+    public Parts(String category, String pName, String pDescription, String pPrice,String imageUri) {
         this.category = category;
         this.pName = pName;
         this.pDescription = pDescription;

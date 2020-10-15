@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#414343"
+    android:backgroundTint="#636363"
+    tools:context=".updatedelete_part">
+
+    <TextView
+        android:id="@+id/text_dropdownlist2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/doppio_one"
+        android:text="@string/textView_updatePartSelectCategory"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_partName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/doppio_one"
+        android:text="@string/textView_updatePartName"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_dropdownlist2" />
+
+    <TextView
+        android:id="@+id/text_partPrice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/doppio_one"
+        android:text="@string/textView_updatePartPrice"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_partName2" />
+
+    <TextView
+        android:id="@+id/text_partDescription2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/doppio_one"
+        android:text="@string/textView_updatePartDescription"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_partPrice2" />
+
+    <EditText
+        android:id="@+id/editText_partName2"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:autofillHints=""
+        android:background="@drawable/input1"
+        android:inputType="textPersonName"
+        android:text="@string/editText_update_delete_rog_strix_helio"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/text_partName2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_partPrice2"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:autofillHints=""
+        android:background="@drawable/input1"
+        android:inputType="textPersonName"
+        android:text="@string/editText_update_delete_price"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="@+id/text_partPrice2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_partdes2"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="50dp"
+        android:autofillHints=""
+        android:background="@drawable/common_google_signin_btn_text_light_normal_background"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="@string/editText_update_delete_description"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_partDescription2" />
+
+    <Button
+        android:id="@+id/btn_choose7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/doppio_one"
+
+        android:onClick="chooseImage"
+        android:text="@string/btn_updateChoose1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/partimgupdatedelete" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="@color/btn_update"
+        android:fontFamily="@font/doppio_one"
+        android:onClick="UpdateData"
+        android:text="@string/btn_update"
+        app:layout_constraintEnd_toStartOf="@+id/deleteBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/partimgupdatedelete" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/btn_delete"
+        android:fontFamily="@font/doppio_one"
+        android:text="@string/btn_delete"
+        app:layout_constraintBottom_toBottomOf="@+id/updateBtn"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/text_updateDeletePart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/doppio_one"
+        android:text="@string/textView_update_delete_part"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/updatedeletespinner"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/text_dropdownlist2" />
+
+    <ImageView
+        android:id="@+id/partimgupdatedelete"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_partdes2"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <Button
+        android:id="@+id/updateImgBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="90dp"
+        android:text="update image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_choose7" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

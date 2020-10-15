@@ -7,11 +7,24 @@
     tools:context=".cart">
 
     <TextView
-        android:id="@+id/pnametxt"
-        android:layout_width="wrap_content"
+        android:id="@+id/pid"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pnametxt"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="#414343"
         android:text="TextView"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/pricetxt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -20,12 +33,41 @@
 
     <TextView
         android:id="@+id/pricetxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
         android:layout_marginBottom="400dp"
+        android:background="#414343"
         android:text="TextView"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imgviewCart"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pricetxt" />
+
+    <TextView
+        android:id="@+id/destxt"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="#414343"
+        android:text="TextView"
+        android:textColor="@color/textColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pricetxt"
+        app:layout_constraintVertical_bias="0.631" />
 </androidx.constraintlayout.widget.ConstraintLayout>

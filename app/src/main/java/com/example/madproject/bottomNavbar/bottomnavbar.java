@@ -12,7 +12,7 @@ import android.widget.FrameLayout;
 import com.example.madproject.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class bottomanavbar extends AppCompatActivity {
+public class bottomnavbar extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
     FrameLayout myMainFrame;
@@ -21,7 +21,7 @@ public class bottomanavbar extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bottomanavbar);
+        setContentView(R.layout.activity_bottomnavbar);
 
         bottomNavigationView = findViewById(R.id.mainNav);
         myMainFrame = findViewById(R.id.mainFrame);
